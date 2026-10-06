@@ -24,8 +24,9 @@ The commercial Eikos dashboard is not part of this open source package.
 ## Basic Use
 
 ```r
-setwd("/home/daniele/convergedR/voltR")
-devtools::load_all(".")
+install.packages("devtools")
+devtools::install_github("Danieletrario/voltR")
+library(voltR)
 
 demo <- volt_demo_project()
 summary(demo$ranking)
@@ -35,8 +36,7 @@ volt_report_pack(demo$ranking, demo$project)$final_report
 ## DIA-Aware Workflow
 
 ```r
-setwd("/home/daniele/convergedR/voltR")
-devtools::load_all(".")
+library(voltR)
 
 demo <- volt_dia_demo_project()
 summary(demo$ranking)
