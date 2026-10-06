@@ -1,0 +1,5 @@
+alternative_id,label,faro_status,notes
+ALT_SOLARE_PARCO,Parco fotovoltaico in area produttiva,ADMISSIBLE,Ammissibile dopo filtro FARO
+ALT_SOLARE_TETTI,Fotovoltaico su coperture pubbliche,ADMISSIBLE,Ammissibile con priorita a edifici pubblici
+ALT_BIOMASSA,Impianto a biomassa locale,PENDING_VERIFICATION,Richiede verifica filiera combustibile
+ALT_EOLICO,Eolico di crinale,NOT_ADMISSIBLE,Escluso dal filtro FARO per vincoli paesaggistici
