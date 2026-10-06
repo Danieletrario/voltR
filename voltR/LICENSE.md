@@ -1,21 +1,45 @@
-# MIT License
+# Licensing and Intellectual Property
 
-Copyright (c) 2026 EIKOS Project
+## Intellectual Property Holder
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+The intellectual property holder for `voltR` is:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+**Eikòs Analytics S.r.l. Società Benefit**
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+## Code License
+
+The R source code of `voltR` is released under the **GNU General Public License
+version 3 (GPL-3)**.
+
+This means that users may use, study, share and modify the code under the terms
+of the GPL-3 license. Derivative software based on the GPL-covered code must
+preserve the same license terms where required by the GPL.
+
+The full GPL-3 license text is available from the Free Software Foundation:
+
+<https://www.gnu.org/licenses/gpl-3.0.en.html>
+
+## Documentation and Non-Code Materials
+
+The documentation, methodological descriptions, examples, synthetic demo
+materials, README files and other non-code textual contents are released under
+the **Creative Commons Attribution 4.0 International license (CC BY 4.0)**,
+unless otherwise stated.
+
+This means that users may share and adapt those materials, including for
+commercial purposes, provided that appropriate attribution is given to:
+
+**Eikòs Analytics S.r.l. Società Benefit**
+
+The full CC BY 4.0 license text is available at:
+
+<https://creativecommons.org/licenses/by/4.0/>
+
+## Commercial Dashboard Exclusion
+
+The open source `voltR` package does not include the Eikòs commercial dashboard,
+private user interface, internal manuals, logo assets or proprietary deployment
+materials.
+
+Those materials are not part of this public package unless explicitly released
+under a separate license.
