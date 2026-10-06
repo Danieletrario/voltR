@@ -1,5 +1,0 @@
-criterion_id,label,direction,weight,unit,description
-production,Produzione attesa,max,0.35,MWh/anno,Energia annua stimata
-investment,Investimento,min,0.25,milioni EUR,Costo stimato di investimento
-land_use,Uso del suolo,min,0.20,ha,Superficie direttamente interessata
-acceptability,Accettabilita sociale,max,0.20,scala 0-100,Preferenza o accettabilita rilevata

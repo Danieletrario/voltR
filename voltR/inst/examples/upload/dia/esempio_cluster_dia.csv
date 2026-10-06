@@ -1,6 +1,0 @@
-"cluster_id","cluster_name","cluster_weight","description","normalized_cluster_weight"
-"C1","Energia",0.25,"Produzione, continuita e resilienza energetica.",0.25
-"C2","Ambiente",0.25,"Impatto ambientale, suolo, emissioni e reversibilita.",0.25
-"C3","Economia",0.2,"Costi, ricadute locali e sostenibilita economica.",0.2
-"C4","Territorio",0.15,"Coerenza territoriale, accessibilita e interferenze.",0.15
-"C5","Partecipazione",0.15,"Accettabilita, consenso informato e qualita del confronto.",0.15
