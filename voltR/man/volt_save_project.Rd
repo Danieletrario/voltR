@@ -17,3 +17,10 @@ The saved path.
 \description{
 Save a VOLT project bundle
 }
+\examples{
+# Salva un progetto RDS per poterlo riaprire senza ricostruire le tabelle.
+demo <- volt_demo_project()
+path <- tempfile(fileext = ".rds")
+volt_save_project(demo, path)
+file.exists(path)
+}

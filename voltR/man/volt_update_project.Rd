@@ -27,3 +27,12 @@ Updated project bundle with recalculated ranking.
 \description{
 Update a VOLT demo/project bundle
 }
+\examples{
+# Sostituisce una tabella del progetto e ricalcola.
+demo <- volt_demo_project()
+criteria <- as.data.frame(demo$criteria)
+criteria$weight <- c(1, 1, 1, 1)
+updated <- volt_update_project(demo, criteria = criteria)
+updated$ranking$result
+updated$criteria
+}

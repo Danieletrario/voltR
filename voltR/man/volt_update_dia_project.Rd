@@ -29,3 +29,11 @@ Updated DIA-aware project bundle.
 \description{
 Update a DIA-aware VOLT project bundle
 }
+\examples{
+# Aggiorna una componente DIA-aware e ricalcola.
+demo <- volt_dia_demo_project()
+clusters <- as.data.frame(demo$clusters)
+clusters$cluster_weight <- rep(1, nrow(clusters))
+updated <- volt_update_dia_project(demo, clusters = clusters)
+updated$ranking$result
+}

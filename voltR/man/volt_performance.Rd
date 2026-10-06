@@ -15,3 +15,14 @@ A \code{volt_performance} data frame.
 \description{
 Create a VOLT performance matrix
 }
+\examples{
+# Ogni riga collega una alternativa a un criterio con un valore numerico.
+performance <- volt_performance(data.frame(
+  alternative_id = c("ALT_A", "ALT_A", "ALT_B", "ALT_B"),
+  criterion_id = c("costo", "beneficio", "costo", "beneficio"),
+  value = c(100, 70, 120, 85),
+  source = "esempio"
+))
+performance
+xtabs(value ~ alternative_id + criterion_id, data = performance)
+}

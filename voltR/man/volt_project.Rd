@@ -32,3 +32,14 @@ An object of class \code{volt_project}.
 \description{
 Create a VOLT project
 }
+\examples{
+# Un progetto descrive il perimetro della valutazione.
+project <- volt_project(
+  "P001",
+  "Percorso energia locale",
+  "Confronto tra alternative ammissibili dopo FARO."
+)
+print(project)
+project$title
+project$workflow_mode
+}

@@ -15,3 +15,8 @@ Data frame with checklist item, status and operational reading.
 \description{
 Build an operational validation checklist for a DIA-aware VOLT ranking
 }
+\examples{
+# Checklist operativa: aiuta a leggere se il ranking e' pronto per il report.
+demo <- volt_dia_demo_project()
+volt_dia_validation_check(demo$ranking)
+}

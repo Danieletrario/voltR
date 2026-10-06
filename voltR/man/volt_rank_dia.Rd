@@ -31,3 +31,16 @@ A \code{volt_dia_ranking} list.
 are normalised across clusters, and indicator weights are normalised only
 inside their cluster.
 }
+\examples{
+# Ranking DIA-aware: conserva contributi per cluster e indicatori.
+demo <- volt_dia_demo_project()
+ranking <- volt_rank_dia(
+  demo$alternatives,
+  demo$clusters,
+  demo$indicators,
+  demo$indicator_performance
+)
+ranking$result
+ranking$cluster_scores
+volt_dia_completeness(ranking)
+}

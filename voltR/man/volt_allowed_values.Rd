@@ -12,3 +12,10 @@ Named list of allowed categorical values.
 \description{
 Allowed values used by VOLT workflows
 }
+\examples{
+# Usa questi valori per evitare codifiche incoerenti nei file da importare.
+values <- volt_allowed_values()
+values$faro_status
+values$direction
+values$workflow_mode
+}

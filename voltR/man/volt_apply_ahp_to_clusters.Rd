@@ -17,3 +17,15 @@ Updated DIA-aware project bundle.
 \description{
 Apply AHP-derived weights to DIA clusters
 }
+\examples{
+# I pesi AHP possono sostituire i pesi dei cluster DIA e ricalcolare il ranking.
+demo <- volt_dia_demo_project()
+ahp_matrix <- volt_ahp_matrix_from_weights(
+  rep(1, nrow(demo$clusters)),
+  labels = demo$clusters$cluster_id
+)
+ahp <- volt_ahp_weights(ahp_matrix, labels = demo$clusters$cluster_id)
+updated <- volt_apply_ahp_to_clusters(demo, ahp)
+updated$clusters
+updated$ranking$result
+}

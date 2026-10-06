@@ -15,3 +15,9 @@ Installed file path.
 \description{
 Locate a bundled VOLT upload example
 }
+\examples{
+# Recupera il percorso di un file di esempio installato con il pacchetto.
+path <- volt_example_path("esempio_alternative.csv")
+path
+utils::read.csv(path)
+}

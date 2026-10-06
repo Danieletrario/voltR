@@ -16,3 +16,13 @@ A \code{volt_cluster_plan} data frame.
 \description{
 Create a VOLT cluster plan from DIA handoff
 }
+\examples{
+# I cluster sono il livello superiore: ciascuno raggruppa indicatori atomici.
+clusters <- volt_cluster_plan(data.frame(
+  cluster_id = c("C1", "C2"),
+  cluster_name = c("Ambiente", "Economia"),
+  cluster_weight = c(0.6, 0.4)
+))
+clusters
+clusters[, c("cluster_id", "cluster_weight")]
+}

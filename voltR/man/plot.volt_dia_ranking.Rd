@@ -17,3 +17,8 @@ Invisibly returns \code{x}.
 \description{
 Plot a DIA-aware VOLT ranking
 }
+\examples{
+# Grafico base dello score finale da indicatori DIA.
+demo <- volt_dia_demo_project()
+plot(demo$ranking)
+}

@@ -15,3 +15,14 @@ A \code{volt_indicator_performance} data frame.
 \description{
 Create a VOLT atomic indicator performance table
 }
+\examples{
+# Le prestazioni atomiche alimentano il ranking DIA-aware.
+performance <- volt_indicator_performance(data.frame(
+  alternative_id = c("ALT_A", "ALT_A", "ALT_B", "ALT_B"),
+  indicator_id = c("I1", "I2", "I1", "I2"),
+  value = c(20, 30, 15, 40),
+  source = "esempio"
+))
+performance
+xtabs(value ~ alternative_id + indicator_id, data = performance)
+}

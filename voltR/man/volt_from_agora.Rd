@@ -15,3 +15,17 @@ A flat or DIA-aware VOLT project bundle.
 \description{
 Create a VOLT project bundle from an agoRa handoff
 }
+\examples{
+# Da un handoff si ricostruisce un bundle VOLT pronto al calcolo.
+demo <- volt_dia_demo_project()
+handoff <- volt_agora_handoff(
+  alternatives = demo$alternatives,
+  clusters = demo$clusters,
+  indicators = demo$indicators,
+  indicator_performance = demo$indicator_performance,
+  project = demo$project
+)
+project <- volt_from_agora(handoff)
+summary(project$ranking)
+project$ranking$result
+}

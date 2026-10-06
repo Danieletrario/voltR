@@ -40,3 +40,17 @@ This object lets \code{voltR} receive project material from agoRa without taking
 package dependency on agoRa. It records provenance and preserves the
 distinction between standalone and agoRa-linked workflows.
 }
+\examples{
+# Un handoff conserva il collegamento metodologico con agoRa senza
+# imporre agoRa come dipendenza tecnica.
+demo <- volt_dia_demo_project()
+handoff <- volt_agora_handoff(
+  alternatives = demo$alternatives,
+  clusters = demo$clusters,
+  indicators = demo$indicators,
+  indicator_performance = demo$indicator_performance,
+  project = demo$project
+)
+names(handoff)
+handoff$metadata$workflow_mode
+}

@@ -13,3 +13,9 @@ operational purpose.
 \description{
 Explain VOLT data imports
 }
+\examples{
+# Guida ai caricamenti: cosa caricare, per quale scopo e con quali colonne.
+guide <- volt_upload_guide()
+guide[, c("destinazione", "quando_usarla")]
+guide[, c("destinazione", "colonne_richieste")]
+}

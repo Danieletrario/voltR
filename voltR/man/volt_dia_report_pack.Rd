@@ -17,3 +17,11 @@ A list of data frames.
 \description{
 Build plain-language report tables for DIA-aware VOLT
 }
+\examples{
+# Report pack DIA: include ranking, completezza, limiti e lettura per cluster.
+demo <- volt_dia_demo_project()
+pack <- volt_dia_report_pack(demo$ranking, demo$project)
+pack$final_report
+pack$completeness
+pack$limitations
+}

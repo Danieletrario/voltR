@@ -19,3 +19,11 @@ Data frame with report sections.
 \description{
 Build an extended narrative report for a DIA-aware VOLT workflow
 }
+\examples{
+# Produce sezioni testuali per un report narrativo DIA-aware.
+demo <- volt_dia_demo_project()
+decision <- volt_decision_log()
+report <- volt_dia_narrative_report(demo$ranking, demo$project, decision)
+report
+report$sezione
+}

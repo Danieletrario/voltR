@@ -12,3 +12,7 @@ Data frame with bundled example files and their purpose.
 \description{
 List bundled VOLT upload examples
 }
+\examples{
+# Elenco dei CSV di esempio inclusi nel pacchetto.
+volt_upload_examples()
+}

@@ -15,3 +15,20 @@ A \code{volt_decision_log} data frame.
 \description{
 Create or validate a VOLT decision log
 }
+\examples{
+# Il log vuoto mostra i campi che devono essere compilati.
+empty_log <- volt_decision_log()
+empty_log
+
+# Il log compilato documenta una decisione motivata, non automatica.
+log <- volt_decision_log(data.frame(
+  decisione = "Approfondire ALT_A",
+  motivazione = "Primo ranking e minori criticita dichiarate",
+  scostamento_dal_ranking = "Nessuno",
+  condizioni = "Verifica tecnica",
+  tempi = "90 giorni",
+  responsabili = "Gruppo tecnico",
+  feedback_previsto = "Report pubblico"
+))
+log
+}

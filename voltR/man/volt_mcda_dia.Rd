@@ -32,3 +32,15 @@ A \code{volt_dia_ranking}.
 \description{
 Run DIA-aware MCDA ranking
 }
+\examples{
+# Esegue la MCDA con struttura DIA: cluster e indicatori atomici.
+demo <- volt_dia_demo_project()
+ranking <- volt_mcda_dia(
+  demo$alternatives,
+  demo$clusters,
+  demo$indicators,
+  demo$indicator_performance
+)
+ranking$result
+ranking$cluster_scores
+}

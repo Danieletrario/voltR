@@ -15,3 +15,14 @@ A \code{volt_alternatives} data frame.
 \description{
 Create a VOLT alternative table
 }
+\examples{
+# Le alternative non ammissibili restano tracciate, ma non entrano nel ranking.
+alternatives <- volt_alternatives(data.frame(
+  alternative_id = c("ALT_A", "ALT_B"),
+  label = c("Alternativa A", "Alternativa B"),
+  faro_status = c("ADMISSIBLE", "NOT_ADMISSIBLE"),
+  notes = c("ammessa", "esclusa")
+))
+alternatives
+alternatives[, c("alternative_id", "faro_status")]
+}

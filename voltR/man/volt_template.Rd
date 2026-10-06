@@ -18,3 +18,9 @@ Data frame template.
 \description{
 Create an empty VOLT template
 }
+\examples{
+# Template vuoti: mostrano le colonne richieste per compilare o importare dati.
+volt_template("alternatives")
+volt_template("criteria")
+volt_template("indicator_performance")
+}

@@ -15,3 +15,8 @@ Data frame with key decision questions and answers.
 \description{
 Build a plain-language decision view for a DIA-aware VOLT ranking
 }
+\examples{
+# Vista orientata alle domande decisionali, utile nel report.
+demo <- volt_dia_demo_project()
+volt_dia_decision_view(demo$ranking)
+}

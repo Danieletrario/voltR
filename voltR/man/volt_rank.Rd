@@ -23,3 +23,12 @@ A \code{volt_ranking} list.
 whose \code{faro_status} is \code{ADMISSIBLE}. Non-admissible alternatives are retained
 in the audit table but excluded from ranking.
 }
+\examples{
+# Ranking base: mostra classificati, esclusi e contributi.
+demo <- volt_demo_project()
+ranking <- volt_rank(demo$alternatives, demo$criteria, demo$performance)
+ranking$result
+ranking$excluded
+ranking$contributions
+summary(ranking)
+}

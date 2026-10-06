@@ -13,3 +13,11 @@ indicator performance, and DIA-aware ranking.
 \description{
 Create a synthetic DIA-aware VOLT demo project
 }
+\examples{
+# Demo con cluster DIA e indicatori atomici.
+demo <- volt_dia_demo_project()
+names(demo)
+demo$ranking$result
+volt_dia_completeness(demo$ranking)
+volt_dia_report_pack(demo$ranking, demo$project)$limitations
+}

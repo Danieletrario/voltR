@@ -12,3 +12,11 @@ A list with project, alternatives, criteria, performance, and ranking.
 \description{
 Create a synthetic VOLT demo project
 }
+\examples{
+# Demo minima: utile per capire struttura e risultati senza preparare dati.
+demo <- volt_demo_project()
+names(demo)
+demo$ranking$result
+summary(demo$ranking)
+volt_report_pack(demo$ranking, demo$project)$final_report
+}

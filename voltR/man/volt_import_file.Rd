@@ -15,3 +15,9 @@ Imported R object.
 \description{
 Import a local file for VOLT
 }
+\examples{
+# Importa un file locale CSV, RDS, RDA o RData.
+path <- volt_example_path("esempio_criteri.csv")
+imported <- volt_import_file(path)
+imported
+}

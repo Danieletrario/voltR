@@ -29,3 +29,10 @@ A \code{volt_ranking}.
 \description{
 Run flat MCDA ranking
 }
+\examples{
+# Esegue la MCDA piatta: alternative, criteri e prestazioni.
+demo <- volt_demo_project()
+ranking <- volt_mcda(demo$alternatives, demo$criteria, demo$performance)
+ranking$result
+ranking$contributions
+}

@@ -15,3 +15,15 @@ A \code{volt_criteria} data frame.
 \description{
 Create a VOLT criteria table
 }
+\examples{
+# direction = "min" significa che valori piu bassi sono preferiti.
+# direction = "max" significa che valori piu alti sono preferiti.
+criteria <- volt_criteria(data.frame(
+  criterion_id = c("costo", "beneficio"),
+  label = c("Costo", "Beneficio locale"),
+  direction = c("min", "max"),
+  weight = c(0.4, 0.6)
+))
+criteria
+sum(criteria$weight)
+}

@@ -17,3 +17,11 @@ A \code{volt_ahp_weights} object with weights and consistency diagnostics.
 \description{
 Derive AHP weights from a pairwise comparison matrix
 }
+\examples{
+# Matrice AHP: Ambiente e' giudicato due volte piu importante del Costo.
+mat <- matrix(c(1, 2, 1/2, 1), nrow = 2)
+ahp <- volt_ahp_weights(mat, labels = c("Ambiente", "Costo"))
+ahp$weights
+ahp$diagnostics
+ahp$interpretation
+}

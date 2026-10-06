@@ -15,3 +15,10 @@ Data frame with written files.
 \description{
 Write bundled DIA-style example CSV files
 }
+\examples{
+# Copia gli esempi DIA in una cartella temporanea modificabile.
+out <- tempfile("volt_dia_examples_")
+files <- volt_write_dia_examples(out)
+files
+list.files(out)
+}

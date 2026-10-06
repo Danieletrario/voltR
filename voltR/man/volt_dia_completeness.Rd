@@ -16,3 +16,9 @@ Data frame with completeness by cluster.
 \description{
 Summarise DIA indicator completeness
 }
+\examples{
+# Controlla dove mancano valori degli indicatori atomici.
+demo <- volt_dia_demo_project()
+volt_dia_completeness(demo$ranking)
+demo$ranking$completeness
+}

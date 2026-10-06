@@ -24,3 +24,10 @@ Updated DIA-aware project bundle.
 \description{
 Apply imported data to a DIA-aware VOLT project bundle
 }
+\examples{
+# Applica una tabella importata a un progetto DIA-aware.
+demo <- volt_dia_demo_project()
+clusters <- as.data.frame(demo$clusters)
+updated <- volt_apply_dia_import(demo, clusters, target = "clusters")
+updated$ranking$result
+}

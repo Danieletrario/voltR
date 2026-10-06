@@ -27,3 +27,12 @@ The function does not use official demographic or technical sources. Every
 demographic, cost, production, participation and preference value is a
 plausible simulation for demonstration and training purposes.
 }
+\examples{
+# Demo completa territoriale: dati sintetici, campione, partecipanti e ranking.
+demo <- volt_valtaro_valceno_demo_project(sample_error = 0.05)
+demo$municipality_population
+demo$sample_formula
+demo$final_facility_ranking
+demo$final_progressive_ranking
+demo$report_sections
+}

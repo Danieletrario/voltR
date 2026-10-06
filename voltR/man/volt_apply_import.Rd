@@ -23,3 +23,10 @@ Updated project bundle.
 \description{
 Apply imported data to a VOLT project bundle
 }
+\examples{
+# Applica dati importati a un progetto e aggiorna il ranking.
+demo <- volt_demo_project()
+criteria <- volt_import_file(volt_example_path("esempio_criteri.csv"))
+updated <- volt_apply_import(demo, criteria, target = "criteria")
+updated$ranking$result
+}

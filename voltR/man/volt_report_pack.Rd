@@ -17,3 +17,11 @@ A list of data frames.
 \description{
 Build plain-language report tables for VOLT
 }
+\examples{
+# Report pack base: tabelle pronte per essere lette o esportate.
+demo <- volt_demo_project()
+pack <- volt_report_pack(demo$ranking, demo$project)
+pack$final_report
+pack$limitations
+pack$formulas
+}

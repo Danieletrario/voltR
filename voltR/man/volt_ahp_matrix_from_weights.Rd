@@ -17,3 +17,10 @@ Reciprocal pairwise comparison matrix.
 \description{
 Build an AHP pairwise matrix from a weight vector
 }
+\examples{
+# Partendo da pesi dichiarati, si ottiene una matrice reciproca coerente.
+volt_ahp_matrix_from_weights(
+  weights = c(0.6, 0.3, 0.1),
+  labels = c("Ambiente", "Costo", "Tempo")
+)
+}

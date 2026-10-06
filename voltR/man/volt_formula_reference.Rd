@@ -12,3 +12,7 @@ Data frame with formula steps used by \code{volt_rank()}.
 \description{
 VOLT formula reference table
 }
+\examples{
+# Tabella leggibile delle formule usate dal motore base.
+volt_formula_reference()
+}

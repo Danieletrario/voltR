@@ -16,3 +16,15 @@ A \code{volt_indicator_registry} data frame.
 \description{
 Create a VOLT indicator registry from DIA atomic indicators
 }
+\examples{
+# Gli indicatori atomici specificano direzione e peso dentro ciascun cluster.
+indicators <- volt_indicator_registry(data.frame(
+  cluster_id = c("C1", "C1", "C2"),
+  indicator_id = c("I1", "I2", "I3"),
+  indicator_name = c("Suolo", "Paesaggio", "Costo"),
+  direction = c("min", "min", "min"),
+  indicator_weight = c(0.5, 0.5, 1)
+))
+indicators
+indicators[, c("cluster_id", "indicator_id", "direction")]
+}

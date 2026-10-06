@@ -17,3 +17,8 @@ Invisibly returns \code{x}.
 \description{
 Plot a VOLT ranking
 }
+\examples{
+# Grafico base dello score finale per la MCDA piatta.
+demo <- volt_demo_project()
+plot(demo$ranking)
+}

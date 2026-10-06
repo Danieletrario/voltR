@@ -15,3 +15,11 @@ VOLT project bundle with recalculated ranking.
 \description{
 Open a saved VOLT project bundle
 }
+\examples{
+# Riapre un progetto salvato e ricalcola il ranking.
+demo <- volt_demo_project()
+path <- tempfile(fileext = ".rds")
+volt_save_project(demo, path)
+reopened <- volt_open_project(path)
+reopened$ranking$result
+}
