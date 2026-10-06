@@ -91,3 +91,14 @@ volt_example_path("esempio_alternative.csv")
 This repository directory is intended to contain only the open source R core.
 The Eikos dashboard, Shiny application, commercial manuals and logo assets are
 kept outside the open source package.
+
+## License and Intellectual Property
+
+The intellectual property holder for `voltR` is **Eikòs Analytics S.r.l.
+Società Benefit**.
+
+The R source code is released under **GPL-3**.
+
+Documentation, methodological descriptions, examples and synthetic demo
+materials are released under **Creative Commons Attribution 4.0 International
+(CC BY 4.0)**, unless otherwise stated.
